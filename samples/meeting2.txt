@@ -1,0 +1,5 @@
+Weekly Standup – June 18
+- Priya resolved the server outage.
+- Next sprint starts June 22.
+- Ravi to update user guide by June 21.
+- Need to improve onboarding flow for new users.
