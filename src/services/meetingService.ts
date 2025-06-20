@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { AppError } from '../utils/AppError';
 
-
 export async function processMeetingNotes(text: string) {
   const prompt = `
 You are an assistant that extracts meeting minutes.
@@ -22,7 +21,6 @@ ${text}
       throw new Error('Gemini API key not found');
     }
 
-    // Gemini expects the prompt in a specific format
     const requestBody = {
       contents: [
         {
@@ -46,10 +44,7 @@ ${text}
       }
     );
 
-    // Gemini's response format
     const content = response.data.candidates[0].content.parts[0].text;
-
-    // Extract JSON from the response (Gemini may return text with JSON block)
     const jsonStart = content.indexOf('{');
     const jsonEnd = content.lastIndexOf('}');
     const jsonString = content.substring(jsonStart, jsonEnd + 1);
