@@ -15,9 +15,9 @@ This project is a Node.js backend service that uses Google Gemini AI to automati
 1. CLone the repository:
    
    ```
-      git clone <your-repo-url>
-      cd ai-meeting-minutes
-      ```
+   git clone <your-repo-url>
+   cd ai-meeting-minutes
+   ```
 2. Install dependencies:
 
    ```
