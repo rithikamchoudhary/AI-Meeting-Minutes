@@ -11,6 +11,17 @@ This project is a Node.js backend service that uses Google Gemini AI to automati
 <li>Google Gemini API</li>
 <li>Multer (for file uploads)</li> <br>
 
+| Area  | Requirement |
+| ------------- | ------------- |
+| Language  | TypeScript  |
+| Framework  | Express.js  |
+| AI Integration  | Gemini  |
+| Endpoints  | POST /process-meeting — accepts raw text (body or file upload)  |
+| Input Format  | Accepts either a .txt file upload or raw text body  |
+| Output Format  | JSON with: summary, decisions[], actionItems[]  |
+| Error Handling  | Handle API timeouts, token issues, missing input |
+
+
 ## **Setup Instructions** <br>
 1. CLone the repository:
    
